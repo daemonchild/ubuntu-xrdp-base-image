@@ -15,11 +15,22 @@ apt-get update &&            \
       libpulse-dev               \
       libu2f-udev \
       desktop-base \
-      xfce4            \
-      xfce4-goodies    \
+      xserver-xorg-core \
+      xserver-xorg-input-all \
       xauth            \
       xrdp              \
-      dbus-x11           && \
+      dbus-x11 \
+        locales \
+        pavucontrol \
+        pulseaudio \
+        pulseaudio-utils \
+        x11-xserver-utils \
+        xfce4 \
+        xfce4-goodies \
+        xfce4-pulseaudio-plugin \
+        xorgxrdp \
+        xrdp \
+        xubuntu-icon-theme && \
     apt-get clean &&             \
     rm -rf /var/lib/apt/lists/*
 

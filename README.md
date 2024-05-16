@@ -15,3 +15,7 @@ docker run -d --name ubuntu-desktop -p 13389:3389 ubuntu-xrdp-base
 ```
 
 Connect via RDP to localhost:13389. ([your_docker_server]:13389)
+
+## Public Docker Image
+There is a public image to see if it works for you at docker/daemonchild/ubuntu-xrdp-base.
+**Passwords are as above, so do not use in production unmodified.**
