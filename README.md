@@ -26,7 +26,7 @@ NB: It is only Google Chrome that requires the 'privileged' capability. If you d
 
 Connect via RDP to [your_docker_server]:13389
 
-![Desktop via RDP](https://github.com/daemonchild/ubuntu-xrdp-base-image/blob/master/docs/ubuntu-xrdp-desktop.png "Desktop via RDP")
+![Desktop via RDP](https://github.com/daemonchild/ubuntu-xrdp-base-image/blob/main/docs/ubuntu-xrdp-desktop.png "Desktop via RDP")
 
 
 ## Prebuilt Image
