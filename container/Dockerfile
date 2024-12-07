@@ -2,27 +2,15 @@ FROM ubuntu:18.04
 LABEL Purpose:  Ubuntu with XRDP Base Image
 LABEL Author:   daemonchild
 LABEL Tag:      daemonchild/ubuntu-xrdp-base
-LABEL Version:  v0.2
+LABEL Version:  v1.0
 
 EXPOSE 3389
 
+# You really MUST change these values
 ARG LOCALUSER="user"
 ARG LOCALPASS="b4d_p4ssw0rd"
 
-# Install locale and set
-#RUN apt-get update &&            \
-#    apt-get install -y           \
-#      apt-utils locales &&                 \
-#    apt-get clean &&             \
-#    rm -rf /var/lib/apt/lists/*
-# Before installing desktop, set the locale to UTF-8
-# see https://stackoverflow.com/questions/28405902/how-to-set-the-locale-inside-a-ubuntu-docker-container
-#RUN sed -i -e 's/# en_GB.UTF-8 UTF-8/en_GB.UTF-8 UTF-8/' /etc/locale.gen && \
-#    locale-gen
-#ENV LANG en_GB.UTF-8
-#ENV LANGUAGE en_GB:en
-#ENV LC_ALL en_GB.UTF-8
-
+# Install Base Image
 RUN apt-get update &&            \
     DEBIAN_FRONTEND=noninteractive apt-get install -y \
       software-properties-common \
